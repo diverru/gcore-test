@@ -11,4 +11,18 @@
     "uptime_seconds": 69470 // количество секунд между текущим временем на момент запроса и started
 }
 ```
-upd2
+###По решению
+```bash
+git clone ...
+cd gcore-test
+git checkout diver/sample_branch
+cd gcore-test/src/simple_endpoint
+pip3 install -r requirements.txt
+./manage.py migrate
+./manage.py runserver
+```
+Далее в браузере открыть `http://localhost:8000/info/`
+
+### Комментарии
+1. Для JSON-endpoint использую django rest framework
+2. Для выдирания различной информации из git использую `pygit2`, если вдруг будут сложности с установкой, нужно предварительно поставить `libgit2`
