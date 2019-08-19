@@ -15,8 +15,6 @@
 ```bash
 git clone ...
 cd gcore-test
-git checkout diver/sample_branch
-cd gcore-test/src/simple_endpoint
 pip3 install -r requirements.txt
 ./manage.py migrate
 ./manage.py runserver
@@ -26,4 +24,3 @@ pip3 install -r requirements.txt
 ### Комментарии
 1. Для JSON-endpoint использую django rest framework
 2. Для выдирания различной информации из git использую `pygit2`, если вдруг будут сложности с установкой, нужно предварительно поставить `libgit2`
-3. Код оставил в ветке, просто чтобы было видно название ветки отличное от `master`.
